@@ -303,3 +303,39 @@ ol {
     font-size: 14px;
   }
 }
+
+.aboutus {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+.aboutus p {
+  margin-bottom: 16px;
+}
+
+.aboutus a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.aboutus a:hover {
+  text-decoration: underline;
+}
+
+.aboutus strong {
+  color: #000;
+}
+
+.aboutus p:last-child {
+  text-align: center;
+  font-size: 1.1em;
+}

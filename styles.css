@@ -335,6 +335,12 @@ nav ul li a:hover {
   font-weight: bold;
   z-index: 2;
 }
+.Item__link_home{
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-weight: bold;
+text-decoration: none;
+}
 /* Media queries for responsiveness */
 @media (max-width: 786px) {
   .grid-container-home {

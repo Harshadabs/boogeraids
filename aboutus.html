@@ -9,46 +9,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="game page.css">
-        <link rel="stylesheet" href="logins.css">
+        <link rel="stylesheet" href="login.css">
 
     </head>
     <body>
-        <header>
-            <nav>
-              <h1>ArconHUB</h1>
-              <ul>
-                <li><a href='/'>Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="#">Contact</a></li>
-                {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('logout') }}" class="login-signup">Hi, {{ current_user.username }}</a></li>
-                {% else %}
-                <li><a href="login.html" class="login-signup">LOGIN / SIGNUP</a></li>
-                {% endif %}
-              </ul>
-            </nav>
-          </header>
-          <div class="container">
+      <header>
+        <nav>
+          <h1>ArconHUB</h1>
+          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          <ul class="menu">
+            <li><a href='index.html' class="navlink">Home</a></li>
+            <li><a href="#" class="navlink">Shop</a></li>
+            <li><a href="aboutus.html" class="navlink">About</a></li>
+            <li><a href="#" class="navlink">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="login.html" class="login-signup">LOGIN / SIGNUP</a></li>
+          </ul>
+        
+        </nav>
+      </header>
+      <div class="aboutus">
         <p>
-            Namaste gamers! Welcome to Arcon HUB, your ultimate gaming destination tailored exclusively for the Indian gaming community! With the trust of millions gamers nationwide, our journey is fueled by the incredible love and support from our dedicated fans.
+          Welcome to <strong>Arcon HUB</strong>—India's premier gaming destination crafted exclusively for the Indian gaming community! Trusted by millions of gamers across the nation, we thrive on the immense love and support from our incredible fans.
         </p>
         <p>
-Exciting news awaits – introducing our Exclusive Store at ArconHUB.com, where your gaming dreams come to life! Exclusively serving the vibrant gaming community in India, Arcon HUB is your one-stop solution for all your gaming needs.
+          We’re thrilled to announce the launch of our <strong>Exclusive Online Store</strong> at <a href="#" target="_blank">ArconHUB.com</a>! Your one-stop shop for everything gaming, tailored to meet the unique needs of Indian gamers.
         </p>
         <p>
-But that’s not all – we’re proud to announce that we accept UPI payments, making your shopping experience seamless and convenient. At Arcon HUB, we prioritize your ease of transaction, and our unique payment gateway ensures a secure and swift payment process that stands unparalleled in India.
+          At Arcon HUB, we’re committed to making your shopping experience smooth and hassle-free. That’s why we proudly support <strong>UPI payments</strong>, ensuring secure, fast, and convenient transactions. Shop with confidence knowing our payment gateway is built with your ease in mind.
         </p>
         <p>
-Join us in the gaming revolution, where passion meets innovation. Elevate your gaming experience with Arcon HUB – because in India, gaming just got a whole lot better!
+          Join the gaming revolution where passion meets innovation! Elevate your gaming experience with Arcon HUB—because gaming in India just reached a whole new level.
         </p>
-<p>
-    to chat with us <a href="https://www.instagram.com/arcon_store">click here </a></p>
-</p>
-</div>
+        <p>
+          Have questions or want to chat with us? <a href="https://www.instagram.com/arcon_store" target="_blank">Click here</a> to connect on Instagram!
+        </p>
+      </div>
+      
 <footer>
     <div class="footer-container">
-      <p>&copy; 2024 ArconHUB. All Rights Reserved.</p>
+      <p class="footer">&copy; 2024 ArconHUB. All Rights Reserved.</p>
       <ul>
         <li><a href="https://www.instagram.com/arcon_store/">About Us</a></li>
         <li><a href="https://wa.link/agt1r4">Contact</a></li>
@@ -56,4 +57,11 @@ Join us in the gaming revolution, where passion meets innovation. Elevate your g
     </div>
   </footer>
     </body>
+    <script>
+      function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('open');
+  }
+
+    </script>
 </html>
