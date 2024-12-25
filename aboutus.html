@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Arcon HUB</title>
+        <link rel="icon" href="images/arcon.32x32.jpeg" type="image/x-icon">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="game page.css">
+        <link rel="stylesheet" href="logins.css">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+              <h1>ArconHUB</h1>
+              <ul>
+                <li><a href='/'>Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}" class="login-signup">Hi, {{ current_user.username }}</a></li>
+                {% else %}
+                <li><a href="login.html" class="login-signup">LOGIN / SIGNUP</a></li>
+                {% endif %}
+              </ul>
+            </nav>
+          </header>
+          <div class="container">
+        <p>
+            Namaste gamers! Welcome to Arcon HUB, your ultimate gaming destination tailored exclusively for the Indian gaming community! With the trust of millions gamers nationwide, our journey is fueled by the incredible love and support from our dedicated fans.
+        </p>
+        <p>
+Exciting news awaits – introducing our Exclusive Store at ArconHUB.com, where your gaming dreams come to life! Exclusively serving the vibrant gaming community in India, Arcon HUB is your one-stop solution for all your gaming needs.
+        </p>
+        <p>
+But that’s not all – we’re proud to announce that we accept UPI payments, making your shopping experience seamless and convenient. At Arcon HUB, we prioritize your ease of transaction, and our unique payment gateway ensures a secure and swift payment process that stands unparalleled in India.
+        </p>
+        <p>
+Join us in the gaming revolution, where passion meets innovation. Elevate your gaming experience with Arcon HUB – because in India, gaming just got a whole lot better!
+        </p>
+<p>
+    to chat with us <a href="https://www.instagram.com/arcon_store">click here </a></p>
+</p>
+</div>
+<footer>
+    <div class="footer-container">
+      <p>&copy; 2024 ArconHUB. All Rights Reserved.</p>
+      <ul>
+        <li><a href="https://www.instagram.com/arcon_store/">About Us</a></li>
+        <li><a href="https://wa.link/agt1r4">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+    </body>
+</html>
