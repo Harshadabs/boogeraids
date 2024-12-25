@@ -30,6 +30,9 @@
 
     <div class="container">
       <div class="section container">
+        <h1 style="color: rgb(0, 0, 0); text-align: center">
+          LOGIN AND SERVER ID RECHARGE
+        </h1>
         <h3>1.) Input Data Game</h3>
         <div class="sidebar">
             <img src="images/Genshin_Impact.png" alt="Genshin Impact" width="200px" class="game-image" />
@@ -87,7 +90,7 @@
     </div>
   </body>
   <script>
-    const shardsPackages = [
+    const Crystal = [
   { title: "60", price: "₹ 80",},
   { title: "330", price: "₹ 390",},
   { title: "1090", price: "₹ 1140",},
@@ -98,13 +101,13 @@
 const container = document.getElementById("container");
 
 // Iterate over the packages and dynamically create elements
-shardsPackages.forEach((packageItem) => {
+Crystal.forEach((packageItem) => {
   const packageElement = document.createElement("button");
   packageElement.classList.add("grid-item");
   packageElement.innerHTML = `
     <a href="#" class="Item__link">
       <div class="product-container" style="display: block;">
-        <img src="images/shards.png" alt="diamond" class="Image"  />
+        <img src="images/Item_Genesis_Crystal.webp" alt="diamond" class="Image"  />
         <span class="Item__title">${packageItem.title}</span>
       </div>
       <span class="Item__price">${packageItem.price}</span>
